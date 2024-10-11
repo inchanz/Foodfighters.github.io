@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Rosmini School website</title>
+    <link rel="stylesheet" type="text/css" href="man.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="bar">
+
+
+ <div >
+    <a href="https://rosmini.bridge.school.nz/absence">   <i class="fas fa-user-minus"></i>
+         Abcences </a> </div>
+            <div> <a href="https://www.rosmini.school.nz/notices">< </i> Daily Notices</a></div>
+        <div><a href="https://rosmini.bridge.school.nz/"><i class="fas fa-user-circle"></i> Login/Portal</a> </div>
+        <div><a href="https://www.rosmini.school.nz/calendar"><i class="fas fa-calendar-alt"></i> Upcoming events</div>
+        <div><a href="https://www.rosmini.school.nz/contact-us">  <i class="fas fa-phone-alt"></i> Contact us</a> </div>
+    </div>
+    
+        <div class="navbar">
+            <a href="http://127.0.0.1:3000/INDEX.HTML" class="nav-item">Home</a>
+            <a href="https://www.rosmini.school.nz/about-rosmini" class="nav-item">About </a>
+            <a href="https://www.rosmini.school.nz/life-rosmini" class="nav-item">Donation</a>
+            <img src="/Users/deleepaugustian/Library/Group Containers/group.net.whatsapp.WhatsApp.shared/Message/Media/64210457154@s.whatsapp.net/d/8/d8471b24-f235-4b8c-ba0b-2c97f7650597.jpg`" width="307.1px"  height="104.98" class="nav-item"> </a>
+            <a href="https://www.rosmini.school.nz/enrolment" class="nav-item"> Join! </a>                                          
+            <a href="https://www.rosmini.school.nz/community" class="nav-item">Community </a>
+            <a href="https://www.rosmini.school.nz/academic" class="nav-item">History </a>
+    </div> 
+
+    <div class="slider" >
+        <div class="slides">
+          <img src="2022_08_04_group-001.jpg" alt="Image 1">
+          <img src="https://rosmini2022.ibcdn.nz/media/2022_08_04_science-005.jpg" alt="Image 2">
+          <img src="https://rosmini2022.ibcdn.nz/media/2023_11_21_group-library-image-aircraft-build-high-school-students.jpg" alt="Image 3">
+          <img src="https://rosmini2022.ibcdn.nz/media/2023_11_21_167a8265-2.jpg" alt="Image 4">
+          <img src="https://rosmini2022.ibcdn.nz/media/2024_03_19_athletics-carousel.jpg" alt="Image 5">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      
+      <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const images = document.querySelectorAll('.slides img');
+      
+        function nextSlide() {
+          slideIndex++;
+          if (slideIndex >= images.length) {
+            slideIndex = 0;
+          }
+          updateSlide();
+        }
+      
+        function prevSlide() {
+          slideIndex--;
+          if (slideIndex < 0) {
+            slideIndex = images.length - 1;
+          }
+          updateSlide();
+        }
+      
+        function updateSlide() {
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        setInterval(nextSlide, 3000); 
+      </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.bar div {
+    color:  black;
+    margin: 0 10px;
+    font-size:
+    14px;
+    transition: all 0.1s ease-in-out;
+    font-family:"Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+  font:recuerda el nombre leo messi
+  size 1rem; ;
+  
+  }
+  body {
+
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+    background-color: bisque;
+  }
